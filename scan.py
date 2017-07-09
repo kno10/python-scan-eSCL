@@ -2,9 +2,9 @@
 import urllib, urllib2, sys, tempfile
 from lxml import etree
 
-# Usage: python scan.py "filename.jpg" "600"
-onam = sys.argv[1] if len(sys.argv) > 1
-resolution = sys.argv[2] if len(sys.argv) > 2
+# Usage: python scan.py "filename.jpg" 600
+onam = sys.argv[1] if len(sys.argv) > 1 else None
+resolution = sys.argv[2] if len(sys.argv) > 2 else None
 scanner = None
 
 ##### Scanner discovery via zeroconf:
