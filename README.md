@@ -1,7 +1,11 @@
 Scan via WiFi using the eSCL protocol
 -------------------------------------
 
-This is a hack, but it works for my Canon PIXMA TS5050 printer, and supposedly works for many other new printers.
+This is a hack, but it works for my Canon PIXMA TS5050 printer (identifies as "TS5000 Series", so I supposed other TS5xxx will work, too), and supposedly works for many other new printers because of the very generic protocol.
+Others have reported success with
+* [Canon PIXMA TS5055](https://github.com/kno10/python-scan-eSCL/issues/2),
+* [Some (unnamed) Kyocera](http://sane-devel.alioth.debian.narkive.com/lQgjGKc3/escl-airprint-support-for-sane)
+* [Some (unnamed) HP](http://sane-devel.alioth.debian.narkive.com/lQgjGKc3/escl-airprint-support-for-sane)
 
 This is also known as "Apple AirScan".
 
@@ -31,9 +35,10 @@ apt-get install python-zeroconf python-lxml
 
 Then scan with
 ```
-python scan.py
+python scan.py <file.jpg> <resolution>
 ```
-It will currently default to using the maximum resolution.
+It will currently default to using the maximum resolution, which may take a while.
+Therefore, you may want to use 300 or 600 dpi.
 
 Contributing:
 -------------
