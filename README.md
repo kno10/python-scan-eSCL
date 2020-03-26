@@ -1,3 +1,8 @@
+UPDATE 2020: ESCL support was added to SANE Backends 1.0.29 release last month.
+With SANE 1.0.29 you should have much easier access to much more functionality than with this prototype!
+
+This prototype project is hence now obsolete.
+
 Scan via WiFi using the eSCL protocol
 -------------------------------------
 
